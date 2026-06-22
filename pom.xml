@@ -166,7 +166,10 @@
                 <artifactId>serenity-maven-plugin</artifactId>
                 <version>${serenity.version}</version>
                 <configuration>
-                    <reports>single-page-html</reports>
+                    <reports>
+                        <report>single-page-html</report>
+                        <report>json</report>
+                    </reports>
                 </configuration>
                 <executions>
                     <execution>

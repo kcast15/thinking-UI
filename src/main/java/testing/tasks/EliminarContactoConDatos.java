@@ -3,7 +3,7 @@ package testing.tasks;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.AcceptAlert;
+//import net.serenitybdd.screenplay.actions.AcceptAlert;
 import testing.ui.CrearContactoPage;
 
 
@@ -13,8 +13,8 @@ public class EliminarContactoConDatos implements Task    {
     public <T extends Actor> void performAs(T t) {
         t.attemptsTo(
                 Click.on(CrearContactoPage.MODIFICAR),
-                Click.on(CrearContactoPage.ELIMINAR),
-                AcceptAlert.acceptAlert()
+                Click.on(CrearContactoPage.ELIMINAR)
+  //              AcceptAlert.now()
         );
     }
     public static EliminarContactoConDatos conDatos() {
