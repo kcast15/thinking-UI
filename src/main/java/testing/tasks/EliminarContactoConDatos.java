@@ -4,6 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 //import net.serenitybdd.screenplay.actions.AcceptAlert;
+import testing.interactions.AceptarAlerta;
 import testing.ui.CrearContactoPage;
 
 
@@ -13,8 +14,8 @@ public class EliminarContactoConDatos implements Task    {
     public <T extends Actor> void performAs(T t) {
         t.attemptsTo(
                 Click.on(CrearContactoPage.MODIFICAR),
-                Click.on(CrearContactoPage.ELIMINAR)
-  //              AcceptAlert.now()
+                Click.on(CrearContactoPage.ELIMINAR),
+                AceptarAlerta.confirmacion()
         );
     }
     public static EliminarContactoConDatos conDatos() {

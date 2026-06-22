@@ -17,4 +17,6 @@ public class MensajeSuccessCrearContacto implements Question<Boolean> {
     public static MensajeSuccessCrearContacto semuestra() {
         return new MensajeSuccessCrearContacto();
     }
+
+
 }
